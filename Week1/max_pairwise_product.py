@@ -28,5 +28,4 @@ if __name__ == "__main__":
     n = int(input())
     a = [int(x) for x in input().split()]
     assert len(a) == n
-
     print(max_pairwise_product_fast(n, a))
