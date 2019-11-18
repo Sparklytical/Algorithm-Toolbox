@@ -1,83 +1,83 @@
 type: edu
 files:
-  - name: last_digit_of_the_sum_of_fibonacci_numbers.py
-    visible: true
-    placeholders:
-      - offset: 469
-        length: 158
-        placeholder_text: type here
-        initial_state:
-          length: 158
-          offset: 469
-        initialized_from_dependency: false
-        selected: true
-        status: Unchecked
-    text: |
-      # python3
+- name: last_digit_of_the_sum_of_fibonacci_numbers.py
+  visible: true
+  placeholders:
+  - offset: 470
+    length: 9
+    placeholder_text: type here
+    initial_state:
+      length: 9
+      offset: 470
+    initialized_from_dependency: false
+    selected: false
+    status: Unchecked
+  text: |
+    # python3
 
 
-      def last_digit_of_the_sum_of_fibonacci_numbers_naive(n):
-          assert 0 <= n <= 10 ** 18
+    def last_digit_of_the_sum_of_fibonacci_numbers_naive(n):
+        assert 0 <= n <= 10 ** 18
 
-          if n <= 1:
-              return n
+        if n <= 1:
+            return n
 
-          fibonacci_numbers = [0] * (n + 1)
-          fibonacci_numbers[0] = 0
-          fibonacci_numbers[1] = 1
-          for i in range(2, n + 1):
-              fibonacci_numbers[i] = fibonacci_numbers[i - 2] + fibonacci_numbers[i - 1]
+        fibonacci_numbers = [0] * (n + 1)
+        fibonacci_numbers[0] = 0
+        fibonacci_numbers[1] = 1
+        for i in range(2, n + 1):
+            fibonacci_numbers[i] = fibonacci_numbers[i - 2] + fibonacci_numbers[i - 1]
 
-          return sum(fibonacci_numbers) % 10
-
-
-      def last_digit_of_the_sum_of_fibonacci_numbers(n):
-          assert 0 <= n <= 10 ** 18
-
-          type here
+        return sum(fibonacci_numbers) % 10
 
 
-      if __name__ == '__main__':
-          input_n = int(input())
-          print(last_digit_of_the_sum_of_fibonacci_numbers(input_n))
-    learner_created: false
-  - name: last_digit_of_the_sum_of_fibonacci_numbers_unit_tests.py
-    visible: true
-    placeholders:
-      - offset: 513
-        length: 9
-        placeholder_text: type here
-        initial_state:
-          length: 9
-          offset: 513
-        initialized_from_dependency: false
-        selected: false
-        status: Unchecked
-    text: |
-      import unittest
-      from last_digit_of_the_sum_of_fibonacci_numbers import last_digit_of_the_sum_of_fibonacci_numbers, last_digit_of_the_sum_of_fibonacci_numbers_naive
+    def last_digit_of_the_sum_of_fibonacci_numbers(n):
+        assert 0 <= n <= 10 ** 18
+
+        type here
 
 
-      class TestLastDigitOfTheSumOfFibonacciNumbers(unittest.TestCase):
-          def test_small(self):
-              for n in range(20):
-                  self.assertEqual(last_digit_of_the_sum_of_fibonacci_numbers(n),
-                                   last_digit_of_the_sum_of_fibonacci_numbers_naive(n))
+    if __name__ == '__main__':
+        input_n = int(input())
+        print(last_digit_of_the_sum_of_fibonacci_numbers(input_n))
+  learner_created: false
+- name: last_digit_of_the_sum_of_fibonacci_numbers_unit_tests.py
+  visible: true
+  placeholders:
+  - offset: 513
+    length: 9
+    placeholder_text: type here
+    initial_state:
+      length: 9
+      offset: 513
+    initialized_from_dependency: false
+    selected: false
+    status: Unchecked
+  text: |
+    import unittest
+    from last_digit_of_the_sum_of_fibonacci_numbers import last_digit_of_the_sum_of_fibonacci_numbers, last_digit_of_the_sum_of_fibonacci_numbers_naive
 
-          def test_large(self):
-              for (n, last_digit) in [(100, 5), type here]:
-                  self.assertEqual(last_digit_of_the_sum_of_fibonacci_numbers(n), last_digit)
+
+    class TestLastDigitOfTheSumOfFibonacciNumbers(unittest.TestCase):
+        def test_small(self):
+            for n in range(20):
+                self.assertEqual(last_digit_of_the_sum_of_fibonacci_numbers(n),
+                                 last_digit_of_the_sum_of_fibonacci_numbers_naive(n))
+
+        def test_large(self):
+            for (n, last_digit) in [(100, 5), type here]:
+                self.assertEqual(last_digit_of_the_sum_of_fibonacci_numbers(n), last_digit)
 
 
-      if __name__ == '__main__':
-          unittest.main()
-    learner_created: false
-  - name: logo.png
-    visible: false
-    learner_created: false
-  - name: tests.py
-    visible: false
-    learner_created: false
+    if __name__ == '__main__':
+        unittest.main()
+  learner_created: false
+- name: logo.png
+  visible: false
+  learner_created: false
+- name: tests.py
+  visible: false
+  learner_created: false
 feedback_link: https://www.coursera.org/learn/algorithmic-toolbox/programming/b66y2/programming-assignment-1-introduction/discussions
 status: Unchecked
 record: -1

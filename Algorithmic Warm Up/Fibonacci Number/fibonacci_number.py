@@ -13,7 +13,7 @@ def fibonacci_number_naive(n):
 def fibonacci_number(n):
     assert 0 <= n <= 45
 
-    if n <= 1:
+     if n <= 1:
         return n
     prev, curr = 0, 1
     for i in range(2, n + 1):

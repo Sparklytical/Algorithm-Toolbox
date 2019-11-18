@@ -3,14 +3,14 @@ files:
 - name: last_digit_of_fibonacci_number.py
   visible: true
   placeholders:
-  - offset: 302
-    length: 159
+  - offset: 303
+    length: 9
     placeholder_text: type here
     initial_state:
       length: 9
       offset: 303
     initialized_from_dependency: false
-    selected: true
+    selected: false
     status: Unchecked
   text: |
     # python3

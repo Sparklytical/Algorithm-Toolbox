@@ -23,7 +23,7 @@ def fibonacci_number_again(n, m):
     index = 2
 
     while True:
-        new = (arr[index - 1] + arr[index - 2])
+        new = arr[index - 1] + arr[index - 2]
         arr.append(new % m)
         previous = current
         current = arr[index]
@@ -35,6 +35,6 @@ def fibonacci_number_again(n, m):
         return arr
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     input_n, input_m = map(int, input().split())
     print(fibonacci_number_again(input_n, input_m))
