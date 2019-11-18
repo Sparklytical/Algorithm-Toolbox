@@ -1,0 +1,80 @@
+type: edu
+files:
+- name: logo.png
+  visible: false
+  learner_created: false
+- name: tests.py
+  visible: false
+  learner_created: false
+- name: lcs2_unit_tests.py
+  visible: true
+  placeholders:
+  - offset: 426
+    length: 9
+    placeholder_text: type here
+    initial_state:
+      length: 9
+      offset: 426
+    initialized_from_dependency: false
+    selected: false
+    status: Unchecked
+  text: |
+    import unittest
+    from lcs2 import lcs2
+
+
+    class LCS2(unittest.TestCase):
+        def test(self):
+            for first_sequence, second_sequence, answer in (
+                ((1, 2), (2, 1), 1),
+                ((1, 2), (3, 4), 0),
+                ([17] * 50, [17] * 25, 25),
+                ([1] * 100, [1] * 100, 100),
+                ((2, 7, 5), (2, 5), 2),
+                ((7, ), (1, 2, 3, 4), 0),
+                ((2, 7, 8, 3), (5, 2, 8, 7), 2),
+                type here
+            ):
+                self.assertEqual(lcs2(first_sequence, second_sequence), answer)
+
+
+    if __name__ == '__main__':
+        unittest.main()
+  learner_created: false
+- name: lcs2.py
+  visible: true
+  placeholders:
+  - offset: 137
+    length: 9
+    placeholder_text: type here
+    initial_state:
+      length: 9
+      offset: 137
+    initialized_from_dependency: false
+    selected: false
+    status: Unchecked
+  text: |
+    # python3
+
+
+    def lcs2(first_sequence, second_sequence):
+        assert len(first_sequence) <= 100
+        assert len(second_sequence) <= 100
+
+        type here
+
+
+    if __name__ == '__main__':
+        n = int(input())
+        a = list(map(int, input().split()))
+        assert len(a) == n
+
+        m = int(input())
+        b = list(map(int, input().split()))
+        assert len(b) == m
+
+        print(lcs2(a, b))
+  learner_created: false
+feedback_link: https://www.coursera.org/learn/algorithmic-toolbox/programming/ekN4T/programming-assignment-4-dynamic-programming/discussions
+status: Unchecked
+record: -1

@@ -1,0 +1,82 @@
+type: edu
+files:
+- name: logo.png
+  visible: false
+  learner_created: false
+- name: tests.py
+  visible: false
+  learner_created: false
+- name: lcs3.py
+  visible: true
+  placeholders:
+  - offset: 191
+    length: 9
+    placeholder_text: type here
+    initial_state:
+      length: 9
+      offset: 191
+    initialized_from_dependency: false
+    selected: false
+    status: Unchecked
+  text: |
+    # python3
+
+
+    def lcs3(first_sequence, second_sequence, third_sequence):
+        assert len(first_sequence) <= 100
+        assert len(second_sequence) <= 100
+        assert len(third_sequence) <= 100
+
+        type here
+
+
+    if __name__ == '__main__':
+        n = int(input())
+        a = list(map(int, input().split()))
+        assert len(a) == n
+
+        m = int(input())
+        b = list(map(int, input().split()))
+        assert len(b) == m
+
+        q = int(input())
+        c = list(map(int, input().split()))
+        assert len(c) == q
+
+        print(lcs3(a, b, c))
+  learner_created: false
+- name: lcs3_unit_tests.py
+  visible: true
+  placeholders:
+  - offset: 406
+    length: 9
+    placeholder_text: type here
+    initial_state:
+      length: 9
+      offset: 406
+    initialized_from_dependency: false
+    selected: false
+    status: Unchecked
+  text: |
+    import unittest
+    from lcs3 import lcs3
+
+
+    class LCS3(unittest.TestCase):
+        def test(self):
+            for first_sequence, second_sequence, third_sequence, answer in (
+                ((1, 2, 3), (2, 1, 3), (1, 3, 5), 2),
+                ((8, 3, 2, 1, 7), (8, 2, 1, 3, 8, 10, 7), (6, 8, 3, 1, 4, 7), 3),
+                ([7] * 25, [6, 7] * 25, [7] * 25, 25),
+                ([7] * 25, [7] * 100, [5, 6] * 50, 0),
+                type here
+            ):
+                self.assertEqual(lcs3(first_sequence, second_sequence, third_sequence), answer)
+
+
+    if __name__ == '__main__':
+        unittest.main()
+  learner_created: false
+feedback_link: https://www.coursera.org/learn/algorithmic-toolbox/programming/ekN4T/programming-assignment-4-dynamic-programming/discussions
+status: Unchecked
+record: -1

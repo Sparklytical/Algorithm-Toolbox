@@ -1,0 +1,72 @@
+type: edu
+files:
+- name: logo.png
+  visible: false
+  learner_created: false
+- name: maximum_number_of_prizes.py
+  visible: true
+  placeholders:
+  - offset: 97
+    length: 9
+    placeholder_text: type here
+    initial_state:
+      length: 9
+      offset: 97
+    initialized_from_dependency: false
+    selected: false
+    status: Unchecked
+  text: |
+    # python3
+
+
+    def compute_optimal_summands(n):
+        assert 1 <= n <= 10 ** 9
+        summands = []
+
+        type here
+
+        return summands
+
+
+    if __name__ == '__main__':
+        input_n = int(input())
+        output_summands = compute_optimal_summands(input_n)
+        print(len(output_summands))
+        print(*output_summands)
+  learner_created: false
+- name: maximum_number_of_prizes_unit_tests.py
+  visible: true
+  placeholders:
+  - offset: 203
+    length: 9
+    placeholder_text: type here
+    initial_state:
+      length: 9
+      offset: 203
+    initialized_from_dependency: false
+    selected: false
+    status: Unchecked
+  text: |
+    import unittest
+    from maximum_number_of_prizes import compute_optimal_summands
+
+
+    class MaximumNumberOfPrizes(unittest.TestCase):
+        def test(self):
+            for (n, answer) in [(1, 1), (6, 3), (100, 13), type here]:
+                summands = compute_optimal_summands(n)
+                self.assertEqual(len(summands), answer)
+                self.assertEqual(sum(summands), n)
+                summands = sorted(summands)
+                self.assertTrue(all(summands[i] < summands[i + 1] for i in range(len(summands) - 1)))
+
+
+    if __name__ == '__main__':
+        unittest.main()
+  learner_created: false
+- name: tests.py
+  visible: false
+  learner_created: false
+feedback_link: https://www.coursera.org/learn/algorithmic-toolbox/programming/kAiGl/programming-assignment-2-greedy-algorithms/discussions
+status: Unchecked
+record: -1
