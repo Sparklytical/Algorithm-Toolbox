@@ -6,7 +6,7 @@ Solutions for Algorithm Toolbox by CourseEra. Folder names starting from Week ha
 
  - [x] Week1
  - [x] Week2
- - [ ] Week3
+ - [x] Week3
  - [ ] Week4
 
 

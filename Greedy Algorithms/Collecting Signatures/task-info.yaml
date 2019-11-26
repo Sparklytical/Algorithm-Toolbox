@@ -9,14 +9,14 @@ files:
 - name: collecting_signatures.py
   visible: true
   placeholders:
-  - offset: 158
-    length: 9
+  - offset: 157
+    length: 343
     placeholder_text: type here
     initial_state:
-      length: 9
+      length: 445
       offset: 158
     initialized_from_dependency: false
-    selected: false
+    selected: true
     status: Unchecked
   text: |
     # python3

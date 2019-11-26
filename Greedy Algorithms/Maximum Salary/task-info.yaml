@@ -14,7 +14,7 @@ files:
       offset: 253
     initialized_from_dependency: false
     selected: false
-    status: Unchecked
+    status: Failed
   text: |
     import unittest
     from random import randint
@@ -53,15 +53,15 @@ files:
 - name: maximum_salary.py
   visible: true
   placeholders:
-  - offset: 298
-    length: 9
+  - offset: 764
+    length: 284
     placeholder_text: type here
     initial_state:
-      length: 9
-      offset: 298
+      length: 284
+      offset: 764
     initialized_from_dependency: false
-    selected: false
-    status: Unchecked
+    selected: true
+    status: Failed
   text: |
     # python3
 
@@ -90,5 +90,5 @@ files:
         print(largest_number(input_numbers))
   learner_created: false
 feedback_link: https://www.coursera.org/learn/algorithmic-toolbox/programming/kAiGl/programming-assignment-2-greedy-algorithms/discussions
-status: Unchecked
+status: Failed
 record: -1
