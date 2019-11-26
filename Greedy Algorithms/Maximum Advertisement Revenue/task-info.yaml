@@ -7,13 +7,13 @@ files:
   visible: true
   placeholders:
   - offset: 846
-    length: 9
+    length: 194
     placeholder_text: type here
     initial_state:
-      length: 9
+      length: 194
       offset: 846
     initialized_from_dependency: false
-    selected: false
+    selected: true
     status: Unchecked
   text: |
     # python3
