@@ -104,16 +104,30 @@ Solutions for Algorithm Toolbox by CourseEra. Folder names starting from Week ha
 
 ## Week 3
 1. [Money Change](https://github.com/EvilSpark/Algorithm-Toolbox/tree/master/Week3/MoneyChange)
+
 `Max time used: 0.02/5.00, max memory used: 9695232/536870912.`
+
 2. [Maximum Value of the Loot (Fractional Knapsack)](https://github.com/EvilSpark/Algorithm-Toolbox/blob/master/WeeK3/maximum-value-of-loot)
+
  `Max time used: 0.01/5.00, max memory used: 9854976/671088640.`
+
  3. [Car Fueling](https://github.com/EvilSpark/Algorithm-Toolbox/tree/master/Week3/Car-Fueling)
+
  `Max time used: 0.02/5.00, max memory used: 9760768/536870912.`
+
  4. [Maximum Advertisement Revenue (Maximum Dot Product)](https://github.com/EvilSpark/Algorithm-Toolbox/tree/master/Week3/Maximum-advertisement)
+
  `Max time used: 0.02/5.00, max memory used: 10051584/536870912.`
+
  5. [Collecting Signatures (Covering Segments by Points)](https://github.com/EvilSpark/Algorithm-Toolbox/tree/master/Week3/Collecting-Signatures)
+
  `Max time used: 0.02/5.00, max memory used: 10031104/536870912.`
+
  6. [Maximum Number of Prizes (Different Summands)](https://github.com/EvilSpark/Algorithm-Toolbox/tree/master/Week3/Maximum-Number-of-Prizes)
+
  `Max time used: 0.06/5.00, max memory used: 10805248/536870912.`
+
  7. [Maximum Salary (Largest Number)](https://github.com/EvilSpark/Algorithm-Toolbox/tree/master/Week3/Maximum-salary)
+
  `Max time used: 0.12/5.00, max memory used: 18628608/536870912.`
+ 
